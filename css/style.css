@@ -12,3 +12,12 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.btn-top{
+  margin-left: 95%;
+  padding:10px;
+  top: 90%;
+  right:40px;
+  float: left;
+  position: fixed;
+}
