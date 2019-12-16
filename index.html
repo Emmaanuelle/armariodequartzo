@@ -31,26 +31,62 @@
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
       <h1 class="header center pink-text">Armario de Quartzo</h1>
       <div class="row center">
         <h5 class="header col s12 light">Frase</h5>
       </div>
       <div class="row center">
-        <a href="#" class="btn-large waves-effect waves-light purple">Conheça</a>
-      </div>
-      <br><br>
+        <button data-target="modal1" class="btn modal-trigger pink">Conheça</button>
 
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4 class="pink-text">Armário de Quartzo</h4>
+            <p class="black-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error delectus, ipsam architecto reiciendis magni, vel officia eligendi ratione maiores quisquam modi mollitia dolorem perspiciatis ullam! Natus dicta alias ex! Porro.</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            </iframe>
+          </div>
+          <div class="modal-footer">
+            <a href="index.html" class="modal-close waves-effect waves-purple btn-flat">Continuar</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <footer class="page-footer orange">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s4"><a href="#missao">Missão</a></li>
+          <li class="tab col s4"><a class="active" href="#visao">Visão</a></li>
+          <li class="tab col s4"><a href="#valor">Valor</a></li>
+        </ul>
+      </div>
+      <div id="missao" class="col s12">
+        <p class="black-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fuga fugit pariatur odit
+          ducimus deleniti voluptatibus aliquid consequatur, voluptates obcaecati porro eaque? Quisquam accusantium
+          fugiat id, quidem ullam excepturi expedita.</p>
+      </div>
+      <div id="visao" class="col s12">
+        <p class="black-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptates numquam
+          consequatur accusamus mollitia unde ipsa enim soluta id dicta facere nulla ea sunt molestias, dolor minima
+          beatae quia velit?</p>
+      </div>
+      <div id="valor" class="col s12">
+        <p class="black-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis, non provident
+          dicta eaque facilis vitae incidunt vero fugit reiciendis nulla illo totam, quidem similique tempore,
+          perspiciatis blanditiis veniam exercitationem? </p>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer pink">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Descrição da Empresa</h5>
           <p class="grey-text text-lighten-4">
-           Empresa de Moda
+            Empresa de Moda
           </p>
 
 
@@ -68,9 +104,9 @@
           <h5 class="white-text">Redes Sociais</h5>
           <ul>
             <li><a class="white-text" href="#!">Facebook</a></li>
-            <li><a class="white-text" href="#!">Instagram</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/emnewcicle/">Instagram</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/armariodequartzo/">Instagram Armario</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/emanuelleferreira05s/">Instagram </a></li>
           </ul>
         </div>
       </div>
@@ -87,6 +123,14 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.tabs').tabs();
+      $('.modal').modal();
+    });
+
+  </script>
 
 </body>
 
